@@ -413,7 +413,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.1"
-  teleprompter:
+  teleprompter_recorder:
     dependency: "direct main"
     description:
       path: ".."

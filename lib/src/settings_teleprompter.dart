@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart' show ColorPicker;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/services.dart';
-import 'package:teleprompter/src/teleprompter_settings.dart';
+import 'teleprompter_settings.dart';
 
 /// Widget that exposes teleprompter display options.
 ///

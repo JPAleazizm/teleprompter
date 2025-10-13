@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teleprompter/teleprompter.dart';
+import 'package:teleprompter_recorder/teleprompter.dart';
 
 void main() => runApp(const MyApp());
 

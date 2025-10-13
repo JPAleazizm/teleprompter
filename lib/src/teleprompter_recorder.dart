@@ -9,11 +9,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ffmpeg_kit_flutter_new/ffmpeg_kit.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:teleprompter/src/cache_cleaner.dart';
-import 'package:teleprompter/src/camera_base.dart';
-import 'package:teleprompter/src/recorded_takes_thumbnails.dart';
-import 'package:teleprompter/src/settings_teleprompter.dart';
-import 'package:teleprompter/src/teleprompter_settings.dart';
+import 'cache_cleaner.dart';
+import 'camera_base.dart';
+import 'recorded_takes_thumbnails.dart';
+import 'settings_teleprompter.dart';
+import 'teleprompter_settings.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 import 'package:flutter/services.dart';
 
