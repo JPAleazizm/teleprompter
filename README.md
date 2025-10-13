@@ -35,7 +35,7 @@ Adicione ao seu `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  teleprompter: 0.0.1
+  teleprompter: 0.0.3
 ```
 
 E execute `flutter pub get`.
